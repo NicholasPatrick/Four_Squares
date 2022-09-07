@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/problemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="96sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/solutionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/buttonPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/zeroDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/zero" />
+
+                    <Button
+                        android:id="@+id/oneDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/one" />
+
+                    <Button
+                        android:id="@+id/twoDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/two" />
+
+                    <Button
+                        android:id="@+id/threeDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/three" />
+
+                    <Button
+                        android:id="@+id/fourDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/four" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/fiveDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/five" />
+
+                    <Button
+                        android:id="@+id/sixDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/six" />
+
+                    <Button
+                        android:id="@+id/sevenDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/seven" />
+
+                    <Button
+                        android:id="@+id/eightDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/eight" />
+
+                    <Button
+                        android:id="@+id/nineDigitButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/digit_button_width"
+                        android:layout_height="@dimen/digit_button_height"
+                        android:onClick="onClick"
+                        android:text="@string/nine" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/resetButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="@string/reset" />
+
+                    <Button
+                        android:id="@+id/deleteButton"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="@string/delete" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
